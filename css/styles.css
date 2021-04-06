@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card{
+    display:flex;
+    flex-direction: row;
+    max-width:60rem;
+    width: 100%;
+    
+
+}
+
+.sedans{
+background-color:hsl(31, 77%, 52%) ;
+padding: 2rem;
+border-bottom-left-radius: 0.5rem;
+border-top-left-radius: 0.5rem;
+width: 100%;
+}
+
+.suv{
+background-color: hsl(184, 100%, 22%);
+padding: 2rem;
+width: 100%;
+}
+
+.luxury{
+background-color:hsl(179, 100%, 13%) ;
+padding: 2rem;
+border-top-right-radius: 0.5rem;
+border-bottom-right-radius: 0.5rem;
+width: 100%;
+}
+
+.title{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.learnMore{
+    padding:1rem;
+    background-color: #fff;
+    display: block;
+    max-width: 10rem;
+    min-width: 10rem;
+    border-radius: 3rem;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    transition: all 0.5s;
+}
+
+.sedans .learnMore{
+    color: hsl(31, 77%, 52%) ;
+} 
+
+.suv .learnMore{
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury .learnMore{
+    color: hsl(179, 100%, 13%);
+}
+.img{
+    margin-top: 2rem;
+}
+.Inner{
+    padding: 1rem 2.5rem;
+}
+
+.sedans .learnMore:active,
+.sedans .learnMore:hover{
+    background-color: hsl(31, 77%, 52%);
+    border: 1px solid #fff;
+    color:#fff
+}
+.suv .learnMore:active,
+.suv .learnMore:hover{
+    background-color: hsl(184, 100%, 22%);
+    border: 1px solid #fff;
+    color:#fff
+}
+.luxury .learnMore:active,
+.luxury .learnMore:hover{
+    background-color: hsl(179, 100%, 13%);
+    border: 1px solid #fff;
+    color:#fff
+}
+
+@media (max-width: 970px) {
+   .card{
+       font-size: 0.8rem;
+   }
+}
+@media(max-width:768 px) {
+    .card{
+font-size: 0.7rem;
+}}
+@media(max-width:600 px) {
+    .card{
+font-size: 0.6rem;
+}}
+@media(max-width: 375px) {
+.card{
+    flex-direction: column;
+}
+}
+
+
+.attribution{
+    bottom: 0;
+    position: fixed;
+    background-color:orange;
+    color: #fff;
+    width :100%;
+}
+
+
+
